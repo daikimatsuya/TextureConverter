@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "externals/DirectXTex/DirectXTex.h"
+
 //テクスチャコンバーター
 class TextureConverter
 {
