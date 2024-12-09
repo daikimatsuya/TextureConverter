@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include "externals/DirectXTex/DirectXTex.h"
+
 
 //テクスチャコンバーター
 class TextureConverter
@@ -24,5 +26,14 @@ private:
 	//<param name="mString">マルチバイト文字列</param>
 	//<returns>ワイド文字列</returns>
 	static std::wstring ConvertMultiByteStringToWideString(const std::string& mString);
+
+	//画像の情報
+	DirectX::TexMetadata metadata_;
+	//画像イメージのコンテナ
+	DirectX::ScratchImage scratchImage_;
+
+	HRESULT result;
+
+	
 };
 
