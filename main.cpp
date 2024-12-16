@@ -20,8 +20,7 @@ int main(int argc, char* argv[]) {
 
 	//テクスチャコンバータ
 	TextureConverter converter;
-	//テクスチャ変換
-	converter.ConvertTextureWICToDDS(argv[kFilePath]);
+
 
 	//argcの数だけ繰り返す
 	for (int i = 0; i < argc; i++) {
@@ -30,6 +29,9 @@ int main(int argc, char* argv[]) {
 		//改行
 		printf("\n");
 	}
+
+	//テクスチャ変換
+	converter.ConvertTextureWICToDDS(argv[kFilePath]);
 	
 	//COM　ライブラリの終了
 	CoUninitialize();

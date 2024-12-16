@@ -2,7 +2,6 @@
 #include <Windows.h>
 using namespace DirectX;
 
-using namespace DirectX;
 
 void TextureConverter::ConvertTextureWICToDDS(const std::string& filePath)
 {
