@@ -33,6 +33,8 @@ int main(int argc, char* argv[]) {
 	//テクスチャ変換
 	converter.ConvertTextureWICToDDS(argv[kFilePath]);
 	
+
+
 	//COM　ライブラリの終了
 	CoUninitialize();
 
